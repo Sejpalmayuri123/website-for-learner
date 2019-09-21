@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Learning website">
+        <meta name="keywords" content="HTML tutorial">
+        <meta name="author" content="Mayuri Sejpal">
+        <title>Intro page</title>
+        <link rel="stylesheet" href="css/parent.css">
+        <link rel="stylesheet" href="css/doctype.css">
+        <link rel="stylesheet" href="css/introduction.css">
+        
+          </head>
+    <body>
+        <header>
+            <div class="container"> </div>
+              <div class="logo">
+                  <h1><span>Scholastic</span>.com</h1>
+              </div>
+            <h4 class="flow">Learning is fun as nobody can take it away from you</h4>
+            </div>
+           </header>
+    <div class="navigation">
+                <ul class="parent">
+                  <li class="child"> <a class="nav" href="index.htm">HOME</li></a>
+                    <li class="child"><a class="nav" href="introduction.htm">HTML</li></a>
+                    <li class="child"><a class="nav" href="">CSS</li></a>
+                   <li class="child"> <a class="nav" href="">INTERVIEW QUESTIONS</li></a>
+                </ul>
+    </div>
+    <div class="menu">
+        <iframe src="parent.htm" height="280%" width="100%"></iframe></div>
+        <div class="main">
+       <h2 class="hh2">What is DOCTYPE</h2>
+       <ul>
+        <li>The !DOCTYPE declaration is a top-level tag-like reference known as a Public Text Identifier.</li> 
+        <li>It should appear at the very beginning of an HTML/XHTML document in order to identify the content of the document
+             as conforming (theoretically) to a particular HTML DTD specification.</li>
+        <li>Historically, including a DTD was not required by browsers; they just interpreted a document according
+             to what elements and attributes it understood.</li>
+        <li>The quoted segment within a !DOCTYPE declaration is called a Formal Public Identifier (FPI.)</li>
+        <li>Every distinct DTD variation will have its own unique FPI string.</li>
+        <li>The !DOCTYPE declaration is not case sensitive.</li>
+    </ul>
+    <h3 class="achthree">SYNTAX</h3>
+    <h5 class="prea">&lt;!DOCTYPE[Top Element][Availability]"[Registration]//[Organization]//[Type][Label]//[Language]""[URL]"></h5>
+    <h3 class="achthree">Explanation</h3>
+   
+    <ol type="1">
+        <li><span class="color">// </span>-- 
+            <ul>
+            <li> It is used as delimiters between keyword fields in the FPI declaration.</li></ul>
+        <li><span class="color">Top Element </span>-- 
+             <ul>
+             <li>Indicates the top level element type declared in the DTD; for HTML it is &lt;HTML&gt;.</li></ul>
+        <li><span class="color">Availability </span>-- 
+            <ul>
+            <li>field indicates whether the identifier is a publicly accessible object (PUBLIC) or a 
+            system resource (SYSTEM) such as a local file or URL.</li>
+            <li> HTML/XHTML DTDs are specified by PUBLIC identifiers.</li></ul>
+        <li><span class="color">Registration </span>--  
+            <ul>
+            <li>Indicated by either a plus ("+") or minus ("-"). A plus symbol indicates
+             that the organization name that follows is ISO-registered.</li>
+             <li>A minus sign indicates the organization name is not 
+             registered.</li>
+             <li> The IETF and W3C are not registered ISO organizations and thus use a "-".</li></ul>
+              <li><span class="color">Organization </span>--  
+            <ul>
+            <li>This is the "OwnerID" - a unique label indicating the name of the entity or
+                organization responsible for the creation and/or maintenance of the artifact (DTD, etc.) being referenced by the
+                 DOCTYPE.</li>
+            <li>The IETF and W3C are the two originating organizations of the official HTML/XHTML DTDs.</li></ul>
+        <li><span class="color">Type </span>-- 
+            <ul>
+                <li> This is the "Public Text Class" - the type of object being referenced.</li>
+                <li>There are many different keywords possible here, but in the case of an HTML/XHTML DTD, it is "DTD" - 
+                    a Document Type Definition.</li></ul> 
+        <li><span class="color">Label </span>-- 
+            <ul>
+                <li>This is the "Public Text Description" - a unique descriptive name for the public text (DTD) being referenced.</li>
+                <li> If the public text changes for any reason, a new Public Text Description string should be created for it.</li></ul>
+        <li><span class="color">Language </span>--
+            <ul>
+                <li>This is the "Public Text Language"; the natural language encoding system used in the creation of the referenced object.</li>
+                <li>>It is written as an ISO 639 language code (uppercase, two letters.) 
+                    HTML/XHTML DTDs are usually (always?) written in English ("EN".)</li></ul>
+        <li><span class="color">URL </span>--
+            <ul>
+                <li> This is the optional explicit URL to the DTD being referenced.</li></ul>
+        </ol>
+
+        <h2 class="hh2">Declaring DOCTYPE</h2>
+        <h3 class="achthree">HTML 5</h3>
+        <div class="example">
+<h5 class="prea bottom">
+&lt;!DOCTYPE html&gt;
+</h5>
+</div>
+
+        <h3 class="achthree">HTML 4.01</h3>
+        <div class="example">
+<h5 class="prea">
+[Strict]--<br>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+"http://www.w3.org/TR/html4/strict.dtd"&gt; <br><br>
+ 
+[Transitional]--<br>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+"http://www.w3.org/TR/html4/loose.dtd"&gt;</h5>
+</div>
+  
+<h3 class="achthree">HTML 3.2</h3>
+        <div class="example">
+        <h5 class="prea">
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;
+</h5>
+</div>   
+
+<h3 class="achthree">HTML 2.0</h3>
+        <div class="example">
+        <h5 class="prea">
+                &lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0 Level 2//EN"&gt;<br>
+                &lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"&gt;<br>
+                &lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;<br>
+                &lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML Level 2//EN"&gt;
+</h5>
+</div> 
+
+<h3 class="achthree">XHTML 1.0</h3>
+        <div class="example">
+        <h5 class="prea">
+[Strict]--<br>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;<br><br>
+[Transitional]--<br>
+ &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;<br><br>
+[Frameset]--<br>
+ &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;
+ </h5>
+ </div>
+
+ <h3 class="achthree">XHTML 1.1</h3>
+        <div class="example">
+        <h5 class="prea">
+    &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"&gt;
+    </h5>
+    </div>
+    <button class="last gin"><a href="introduction.htm">< Previous</a></button>
+    <button class="last end gin"><a href="heading.htm">Next ></a></button>
+</body>
+</html>
+
+       
+    
+    
+ 
